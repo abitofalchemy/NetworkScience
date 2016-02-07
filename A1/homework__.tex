@@ -1,0 +1,93 @@
+\documentclass[letterpaper, 12pt, oneside]{memoir}
+
+\usepackage{lipsum}
+% Abstract: Remove indents around abstract text
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+% Change font size to conform with the rest of the document text
+\renewcommand{\abstracttextfont}{\normalsize}
+% Set left and right margins to equal ratio
+\setlrmargins{*}{*}{1}
+
+\abstractnum   % Format heading as chapter
+\abstractintoc % Include "Abstract" in ToC
+
+\title{Network Model Genesis Using Hyperedge Replacement Grammars}
+\author{{Salvador Agui\~{n}aga}\\
+        %\\
+        %{Ph.D. Thesis Proposal}\\
+        %\vspace{10pt}
+        {University of Notre Dame}\\
+        }
+
+
+\begin{document}
+\frontmatter
+
+% Adapted from http://tex.stackexchange.com/a/187904/3345
+\let\oldcleartorecto\cleartorecto
+\let\cleartorecto\relax
+\maketitle
+\pagestyle{empty}
+\aliaspagestyle{chapter}{empty}
+
+%% 
+%% Thesis abstract
+%% 
+\begin{abstract}
+  %------%---------%---------%---------%---------%---------%---------%---------%
+  %The Context
+  %The Problem
+  With the volume of published science and on-line supplementary information growing
+  at a breakneck speed, more effective tools that go beyond search are 
+  desperately needed. Scientists across many fields need to learn from, make sense
+  of, and keep up with vast volumes of published literature.
+  This ongoing challenge prompts us to continuously ask ourselves whether
+  or not it is possible to build systems that enable scientists to ask
+  and probe the big questions in science. To put it another way,
+  is it suddenly possible to probe our codified body of knowledge
+  to help transform and expand the way scientists think about the big challenges
+  it their respective fields?
+  Advancements in technology has made it possible to arrive at
+  the crossroads where computation and computability meets what is desperately
+  necessary in order to forge the foundation to great new breakthroughs in science.\\
+  
+
+  My research work focuses on deeper examination of how we codify and store
+  knowledge. Decomposing massive networks of published science (JSTOR, ArXiv, etc.)
+  to probe the underlying structure will enable us to build new computational tools.
+  These tools will help the scientific community generate new hypotheses, reconsider
+  ones previously shelved, or transform the way we think about the problems
+  in light of new information.\\
+
+  My contribution centers on the development of algorithms for network models. I
+  am working on hyperedge replacement grammars to grow graphs (or networks) to
+  any order and size. The graph generating framework learns the structure of real-world networks to produce a set of production rules. These rules are the foundation that
+  allows us to grow new graphs by probabilistically selecting how we replace
+  hyperedges until graphs are formed to a desired edge or node count. Properties
+  observed in the real-world networks are preserved in the resulting graphs.
+  
+
+\end{abstract}
+%  \let\cleartorecto\oldcleartorecto
+%- The technical problem to be solved with a justification of its importance
+%- An account of related and prior works that explains why these works have not solved the problem
+%- The specific research problem or question that your thesis work will address
+%- A sketch of the proposed approach or solution
+%- The expected contributions of your dissertation research
+%- Progress in solving the stated problem
+%- The methods you are using or will use to carry out your research
+%- A plan for evaluating your work and presenting credible evidence of your results to the research community
+\section*{Thesis Summary}
+%- The technical problem to be solved with a justification of its importance
+
+
+%  \setcounter{tocdepth}{3}
+%  \tableofcontents
+
+%  \mainmatter
+
+%  \chapter{One}
+%  \section{Overview\label{sec:Overview}}
+%  \lipsum[4]
+\end{document}
